@@ -1,7 +1,7 @@
 import React from "react";
 
 const AdminDashboard = () => {
-  return <div>User Dashboard</div>;
+  return <div>Admin Dashboard</div>;
 };
 
 export default AdminDashboard;

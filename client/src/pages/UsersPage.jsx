@@ -2,10 +2,12 @@ import React, { useEffect } from "react";
 import api from "../api";
 
 const UsersPage = () => {
+  const [users, setUsers] = useState("");
   const getAllUsers = async () => {
     try {
       const res = await api.get("/admin/getUsers");
-      console.log(res.data);
+      // console.log(res.data);
+      setUsers(res.data);
     } catch (error) {
       console.error(error);
     }
